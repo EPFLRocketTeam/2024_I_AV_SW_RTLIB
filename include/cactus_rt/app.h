@@ -1,7 +1,7 @@
 #ifndef CACTUS_RT_APP_H_
 #define CACTUS_RT_APP_H_
 
-#include <gtest/gtest_prod.h>
+// #include <gtest/gtest_prod.h>
 
 #include <memory>
 #include <string>
@@ -20,7 +20,7 @@ namespace cactus_rt {
  */
 class App {
   friend class Thread;
-  FRIEND_TEST(SingleThreadTracingTest, QueueOverflowWillNotBlock);
+  // FRIEND_TEST(SingleThreadTracingTest, QueueOverflowWillNotBlock);
 
   // The name of the app
   std::string name_;
