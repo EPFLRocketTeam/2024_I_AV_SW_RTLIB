@@ -4,8 +4,8 @@ project(cactus_rt)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 option(ENABLE_CLANG_TIDY "Run clang-tidy" OFF)
-option(ENABLE_EXAMPLES "Build example programs" ON)
-option(ENABLE_TRACING "Enable runtime tracing support" ON)
+option(ENABLE_EXAMPLES "Build example programs" OFF)
+option(ENABLE_TRACING "Enable runtime tracing support" OFF)
 option(ENABLE_ROS2 "Enables ROS2 support" OFF)
 option(BUILD_DOCS "Build documentations" OFF)
 
@@ -22,7 +22,7 @@ find_package(Threads REQUIRED)
 #########################
 
 if(CACTUS_RT_ENABLE_FETCH_DEPENDENCIES)
-  Include(FetchContent)
+  include(FetchContent)
 
   FetchContent_Declare(
     quill
