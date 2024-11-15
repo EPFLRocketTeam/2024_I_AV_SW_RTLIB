@@ -1,5 +1,16 @@
-cactus-rt: a Linux real-time app framework
-==========================================
+# cactus-rt (Fork): Enhanced Linux Real-Time Application Framework
+
+**This repository is a fork of the original [cactus-rt](https://github.com/cactusdynamics/cactus-rt).**  
+It builds upon the foundational work to improve, customize, and adapt the library for Avionics specific use cases. Below is an overview of the modifications introduced in this fork:
+
+### Fork Changes Overview
+1. Removed dependence on gtest when compiling for release
+2. Changed compilation flag to disable building examples and tracing support by default
+3. Updated README.md
+
+---
+
+# cactus-rt: a Linux Real-Time Application Framework
 
 Relevant blog posts: [Part 1](https://shuhaowu.com/blog/2022/01-linux-rt-appdev-part1.html) | [Part 2](https://shuhaowu.com/blog/2022/02-linux-rt-appdev-part2.html) | [Part 3](https://shuhaowu.com/blog/2022/03-linux-rt-appdev-part3.html) | [Part 4](https://shuhaowu.com/blog/2022/04-linux-rt-appdev-part4.html)
 
