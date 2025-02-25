@@ -25,7 +25,8 @@ App::App(std::string name, AppConfig config)
   if (logger_config_.default_handlers.empty()) {
     SetDefaultLogFormat(logger_config_);
   }
-
+  StartQuill();
+  
   // TODO: backend_thread_notification_handler can throw - we need to handle this somehow
   // logger_config_.backend_thread_notification_handler
 }
@@ -38,7 +39,6 @@ App::~App() {
 void App::Start(int64_t start_monotonic_time_ns) {
   LockMemory();
   ReserveHeap();
-  StartQuill();
 
   if (start_monotonic_time_ns == -1) {
     start_monotonic_time_ns = NowNs();

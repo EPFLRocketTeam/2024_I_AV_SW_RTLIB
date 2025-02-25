@@ -6,7 +6,8 @@ It builds upon the foundational work to improve, customize, and adapt the librar
 ### Fork Changes Overview
 1. Removed dependence on gtest when compiling for release
 2. Changed compilation flag to disable building examples and tracing support by default
-3. Updated README.md
+3. Moved `StartQuill()` to the `App` constructor to ensure it is called before any logging
+4. Updated README.md
 
 ---
 
